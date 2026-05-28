@@ -1,6 +1,6 @@
 %  Pre-run script for RigidTransforms.mlx
 % ---- Known Issues     -----
-KnownIssuesID = "";
+KnownIssuesID = "MATLAB:Editor:Document:NotAvailable";
 % ---- Pre-run commands -----
  
 openExample = @(str)MyOpen(str);
