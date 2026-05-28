@@ -1,4 +1,3 @@
-
 <a id="T_DEF03274"></a>
 
 # <span style="color:rgb(213,80,0)">Introduction to Quadcopter Modeling & Simulation</span>
@@ -18,7 +17,7 @@ _Created with R2025a. Compatible with R2025a and later releases._
 
 # Information
 
-This curriculum module contains interactive [MATLAB® live scripts](https://www.mathworks.com/products/matlab/live-editor.html) that teach the fundamental principles of how a quadcopter operates.
+This curriculum module contains interactive [MATLAB® live scripts](https://www.mathworks.com/products/matlab/live-editor.html) that teach the fundamental principles behind how a quadcopter operates.
 
 <p style="text-align:left">
    <img src="Images/DroneScene.png" width="737" alt="DroneScene.png">
@@ -28,7 +27,7 @@ This curriculum module contains interactive [MATLAB® live scripts](https://www.
 
 ## Background
 
-You can use these live scripts as demonstrations in lectures, class activities, or interactive assignments outside class. Starting from the basics of mathematical modeling, we will build up to a full simulation of a quadcopter delivering a package. We will also look at different fidelities of simulation, ranging from simple cuboidal navigation models to detailed physical models to photorealistic simulations suitable for testing sensing and perception algorithms. Further resources are provided for student projects, competitions, and researchers looking to develop additional skills for industrial applications or research.
+You can use these live scripts as demonstrations in lectures, class activities, or interactive assignments outside class. Starting from the basics of mathematical modeling, we will build up to a full simulation of a quadcopter delivering a package. We will also look at different fidelities of simulation ranging from simple cuboidal navigation models to detailed physical models to photorealistic simulations suitable for testing sensing and perception algorithms. Further resources are provided for student projects, competitions and researchers looking to develop their skills further for industrial applications or research.
 
 
 The instructions inside the live scripts will guide you through the exercises and activities. Get started with each live script by running it one section at a time. To stop running the script or a section midway (for example, when an animation is in progress), use the <img src="Images/EndIcon.png" width="19" alt="EndIcon.png"> Stop button in the **RUN** section of the **Live Editor** tab in the MATLAB Toolstrip.
@@ -41,7 +40,7 @@ Contact the [MathWorks Educator Content Development Team](mailto:onlineteaching@
 
 ## Prerequisites
 
-It is expected that students taking this course will be familiar with the basics of MATLAB programming and working with the Simulink environment. They should also have a basic understanding of ordinary differential equations, physics, and numerical simulations. Additionally, a knowledge of basic Control Systems and Physical Modeling with Simscape will also be helpful. 
+It is expected that students going through this course should be familiar with the basics of MATLAB programming and working with the Simulink environment. They should also have a basic understanding of ordinary differential equations, physics, and numerical simulations. Additionally, a knowledge of basic Control Systems and Physical Modeling with Simscape will also be helpful. 
 
 
 To help with the background requirements, Online Self\-Paced Courses are available on MATLAB Academy, which the students can use to learn more:
@@ -79,7 +78,7 @@ To help with the background requirements, Online Self\-Paced Courses are availab
 -  [Control System Modeling Essentials](https://matlabacademy.mathworks.com/details/control-system-modeling-essentials/otmlslcsme) 
 -  [PID Control Techniques](https://matlabacademy.mathworks.com/details/pid-control-techniques/otmlslpct) 
 
-Each of these courses awards a certificate upon completion. The courses can also be assigned as homework.
+Each of these courses awards a certificate upon completion. The courses can also be assigned as homework alongside the course.
 
 <a id="H_330E72C3"></a>
 
@@ -91,16 +90,16 @@ Use the [<img src="Images/OpenInMO.png" width="136" alt="OpenInMO.png">](https:/
 
 ### **On Desktop:**
 
-Download or clone this repository. Open MATLAB, navigate to the folder containing these scripts, and double\-click [UAV.prj](<matlab: openProject("UAV.prj")>). It will add the appropriate files to your MATLAB path, set up your starting folder, and open an app that asks you where you would like to start. 
+Download or clone this repository. Open MATLAB, navigate to the folder containing these scripts and double\-click on [UAV.prj](<matlab: openProject("UAV.prj")>). It will add the appropriate files to your MATLAB path, set up your starting directory, and open an app that asks you where you would like to start. 
 
 
-Ensure you have all the required products ([listed below](#H_E850B4FF)) installed. If you need to include a product, use the Add\-On Explorer to add it. To install an add\-on, go to the **Home** tab and select  <img src="Images/AddOnsIcon.png" width="16" alt="AddOnsIcon.png"> **Add-Ons** > **Get Add-Ons**. 
+Ensure you have all the required products ([listed below](#H_E850B4FF)) installed. If you need to include a product, add it using the Add\-On Explorer. To install an add\-on, go to the **Home** tab and select  <img src="Images/AddOnsIcon.png" width="16" alt="AddOnsIcon.png"> **Add-Ons** > **Get Add-Ons**. 
 
 <a id="H_E850B4FF"></a>
 
 ## Products
 
-[MATLAB®](http://www.mathworks.com/products/matlab.html), [Simulink®](https://www.mathworks.com/products/simulink.html),  [Stateflow®](https://www.mathworks.com/products/stateflow.html), [Aerospace Blockset](https://www.mathworks.com/products/aerospace-blockset.html), and [Simulink® Real\-Time™](https://www.mathworks.com/products/simulink-real-time.html) are used throughout. The [RigidTransforms](#M_5db9) script also uses the [Image Processing Toolbox™](https://www.mathworks.com/products/image-processing.html), and the [Computer Vision Toolbox™](https://www.mathworks.com/products/computer-vision.html). 
+[MATLAB®](http://www.mathworks.com/products/matlab.html), [Simulink®](https://www.mathworks.com/products/simulink.html),  [Stateflow®](https://www.mathworks.com/products/stateflow.html), [Aerospace Blockset](https://www.mathworks.com/products/aerospace-blockset.html), and [Simulink® Real\-Time™](https://www.mathworks.com/products/simulink-real-time.html) are used throughout. The [RigidTransforms](#M_5db9) script also uses the [Image Processing Toolbox™](https://www.mathworks.com/products/image-processing.html), and the [Computer Vision Toolbox™](https://www.mathworks.com/products/computer-vision.html). The [Trajectory Generation](#M_3cef) script also uses the [Robotics System Toolbox™](https://www.mathworks.com/products/robotics.html). The [QuadcopterBasics](#M_531f) script and [PropellerModel](#M_72c8) script also use the [Symbolic Math Toolbox™](https://www.mathworks.com/products/symbolic.html).
 
 <a id="H_E8C62B23"></a>
 
@@ -126,12 +125,12 @@ Introduction to mathematical modeling with six degrees of freedom.
 
 ||||
 | :-- | :-- | :-- |
-| <img src="Images/SixDOFBlock.png" width="171" alt="SixDOFBlock.png"> <br>  | **In this script, students will...** <br> $\bullet$ Learn about movement in 6 degrees of freedom. <br>  | **Models referenced** <br> $\bullet$ Modeling a Six Degree of Freedom Motion Platform <br>   |
+| <img src="Images/SixDOFBlock.png" width="171" alt="SixDOFBlock.png"> <br>  | **In this script, students will...** <br> $\bullet$ Learn about movement in 6 degrees\-of\-freedom. <br>  | **Models referenced** <br> $\bullet$ Modeling a Six Degree of Freedom Motion Platform <br>   |
 
 <a id="TMP_8a3f"></a>
 
 ## **Modeling a Quadcopter**
-<a id="TMP_1dbc"></a>
+<a id="M_72c8"></a>
 
 ###  **3.** [**Propeller Model**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Quadcopter-Modeling-Simulation​&project=UAV.prj&file=Scripts/PropellerModel.mlx)
 
@@ -141,7 +140,7 @@ Create a simple propeller model using blade element theory and dimensional analy
 | :-- | :-- | :-- |
 | <img src="Images/PropellerBlock.png" width="171" alt="PropellerBlock.png"> <br>  | **In this script, students will...** <br> $\bullet$ Construct a minimal physical model of a quadcopter propeller. <br> $\bullet$ Understand how rotor speed produces thrust and torque. <br> $\bullet$ Understand how thrust and torque depend on the width of a rotor. <br>  | **Models referenced** <br> $\bullet$ [SimplePropellerModel.slx](./Models/SimplePropellerModel.slx) <br>   |
 
-<a id="TMP_2d09"></a>
+<a id="M_531f"></a>
 
 ###  **4.** [**Quadcopter Basics**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Quadcopter-Modeling-Simulation​&project=UAV.prj&file=Scripts/QuadcopterBasics.mlx)
 
@@ -165,7 +164,7 @@ Explore the implications of moving in a 3D world.
 
 ###  **6.** [**Quadcopter Control**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Quadcopter-Modeling-Simulation​&project=UAV.prj&file=Scripts/QuadcopterControl.mlx)
 
-Investigate the use of PID control systems on a quadcopter.
+Investigate using PID control systems on a quadcopter.
 
 ||||
 | :-- | :-- | :-- |
@@ -184,7 +183,7 @@ Improve the fidelity of a quadcopter model with Simscape elements.
 | :-- | :-- | :-- |
 | <img src="Images/SimscapeFamily.png" width="171" alt="SimscapeFamily.png"> <br>  | **In this script, students will...** <br> $\bullet$ Use pulse width modulation on a DC motor <br> $\bullet$ Model a propeller in Simscape <br>  | **Models referenced** <br> $\bullet$ Build and Simulate a Simple DC Motor <br> $\bullet$ [Propeller\_Model.slx](./Models/Propeller_Model.slx) <br> $\bullet$ [Propeller\_Ref\_Speed.slx](./Models/Propeller_Ref_Speed.slx) <br>   |
 
-<a id="TMP_4870"></a>
+<a id="M_3cef"></a>
 
 ###  **8.** [**Trajectory Generation**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Quadcopter-Modeling-Simulation​&project=UAV.prj&file=Scripts/ExampleCollectionOnTrajectories.mlx)
 
@@ -192,14 +191,14 @@ Explore two documentation examples on trajectory generation
 
 ||||
 | :-- | :-- | :-- |
-| <img src="Images/MinimumJerk.png" width="171" alt="MinimumJerk.png"> <br>  | **In this script, students will...** <br> $\bullet$ Explore the effects of planning trajectories to minimize jerk <br> $\bullet$ Learn about Simscape Results Explorer, spatial contact forces, and applications of multibody modeling <br>  | **Models referenced** <br> $\bullet$ Generate Minimum Jerk Trajectory <br> $\bullet$ Package Delivery Quadcopter Example <br>   |
+| <img src="Images/MinimumJerk.png" width="171" alt="MinimumJerk.png"> <br>  | **In this script, students will...** <br> $\bullet$ Explore the effects of planning trajectories to minimize jerk <br> $\bullet$ Learn about Simscape Results Explorer, spatial contact forces and applications of multibody modeling <br>  | **Models referenced** <br> $\bullet$ Generate Minimum Jerk Trajectory <br> $\bullet$ Package Delivery Quadcopter Example <br>   |
 
 <a id="TMP_0492"></a>
 
 ###  **9.** [**Quadcopter Package Delivery**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Quadcopter-Modeling-Simulation​&project=UAV.prj&file=Scripts/QuadcopterFromFEX.mlx)
 ||||
 | :-- | :-- | :-- |
-| <img src="Images/Quadcopter.png" width="171" alt="Quadcopter.png"> <br>  | **In this script, students will...** <br> $\bullet$ Explore the fully implemented model to see the various subsystems: electrical, mechanical, and maneuver controller. <br> $\bullet$ Work on exercises on motor sizing, testing stability and range, integrating a 3D propeller, and more. <br>  | **Models referenced** <br> $\bullet$ Quadcopter Drone Model in Simscape <br>   |
+| <img src="Images/Quadcopter.png" width="171" alt="Quadcopter.png"> <br>  | **In this script, students will...** <br> $\bullet$ Explore the fully implemented model to see the various subsystems \- electrical, mechanical and maneuver controller. <br> $\bullet$ Work on exercises on motor sizing, testing stability and range, integrating a 3D propeller, and more. <br>  | **Models referenced** <br> $\bullet$ Quadcopter Drone Model in Simscape <br>   |
 
 <a id="TMP_89b5"></a>
 
@@ -225,7 +224,7 @@ Explore a variety of high\- and low\-fidelity scenarios.
 
 ## [**Next Steps**](https://matlab.mathworks.com/open/github/v1?repo=MathWorks-Teaching-Resources/Quadcopter-Modeling-Simulation​&project=UAV.prj&file=Scripts/NextSteps.mlx)
 
-Suggest additional directions that students may be interested in exploring, including Advanced Control, Working with ROS and Gazebo, and the Challenge Projects.
+Suggest additional directions that students may be interested in exploring including Advanced Control, Working with ROS and Gazebo, and the Challenge Projects.
 
 <a id="H_F61733D7"></a>
 

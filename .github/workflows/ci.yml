@@ -85,6 +85,8 @@ jobs:
         Computer_Vision_Toolbox
         Stateflow
         Simulink_Real-Time
+        Symbolic_Math_Toolbox
+        Robotic_System_Toolbox
       LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libstdc++.so.6
     steps:
       # Checks-out your repository
