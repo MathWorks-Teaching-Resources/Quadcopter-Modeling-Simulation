@@ -5,7 +5,7 @@ KnownIssuesID = "MATLAB:Editor:Document:NotAvailable";
 DownloadExampleFromFileExchange = @(dir,URL,proj) DownloadSpoof(dir,URL,proj);
 openExample = @(str)MyOpen(str);
 
-function DownloadSpoof(dir)
+function DownloadSpoof(dir,URL,proj)
 disp("Pretend downloading example to " + dir + " from " + URL)
 disp("Then pretend running the project: " + proj)
 end
