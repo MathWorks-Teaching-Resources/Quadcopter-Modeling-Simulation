@@ -135,7 +135,7 @@ Create a simple propeller model using blade element theory and dimensional analy
 
 ||||
 | :-- | :-- | :-- |
-| <img src="Images/PropellerBlock.png" width="171" alt="PropellerBlock.png"> <br>  | **In this script, students will...** <br> $\bullet$ Construct a minimal physical model of a quadcopter propeller. <br> $\bullet$ Understand how rotor speed produces thrust and torque. <br> $\bullet$ Understand how thrust and torque depend on the width of a rotor. <br>  | **Models referenced** <br> $\bullet$ [SimplePropellerModel.slx](./Models/SimplePropellerModel.slx) <br>   |
+| <img src="Images/PropellerBlock.png" width="171" alt="PropellerBlock.png"> <br>  | **In this script, students will...** <br> $\bullet$ Construct a minimal physical model of a quadcopter propeller. <br> $\bullet$ Understand how propeller speed produces thrust and torque. <br> $\bullet$ Understand how thrust and torque depend on the width of a propeller. <br>  | **Models referenced** <br> $\bullet$ [SimplePropellerModel.slx](./Models/SimplePropellerModel.slx) <br>   |
 
 <a id="M_531f"></a>
 
@@ -205,7 +205,7 @@ Explore two documentation examples on trajectory generation
 
 ||||
 | :-- | :-- | :-- |
-| <img src="Images/GroundTruth.png" width="171" alt="GroundTruth.png"> <br>  | **In this script, students will...** <br> $\bullet$ Learn about combining measurements from different sensors to estimate the location <br> $\bullet$ Design a Kalman Filter to estimate the angular position of a pendulum <br> $\bullet$ Design an Extended Kalman Filter to estimate the angular position of the nonlinear pendulum system <br>  | **Models referenced** <br> $\bullet$ IMU and GPS Fusion for Inertial Navigation <br> $\bullet$ virtualPendulumModel.slx (Kalman Filter Lab) <br>   |
+| <img src="Images/GroundTruth.png" width="171" alt="GroundTruth.png"> <br>  | **In this script, students will...** <br> $\bullet$ Learn about combining measurements from different sensors to estimate the location <br> $\bullet$ Design a Kalman Filter to estimate the angular position of a pendulum <br> $\bullet$ Design an Extended Kalman Filter to estimate the angular position of a nonlinear pendulum system <br>  | **Models referenced** <br> $\bullet$ IMU and GPS Fusion for Inertial Navigation <br> $\bullet$ virtualPendulumModel.slx (Kalman Filter Lab) <br>   |
 
 <a id="TMP_4f0f"></a>
 
