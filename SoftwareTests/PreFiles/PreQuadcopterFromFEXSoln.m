@@ -1,6 +1,6 @@
 %  Pre-run script for QuadcopterFromFEX.mlx
 % ---- Known Issues     -----
-KnownIssuesID = "";
+KnownIssuesID = "MATLAB:Editor:Document:NotAvailable";
 % ---- Pre-run commands -----
 DownloadExampleFromFileExchange = @(dir,URL,proj) DownloadSpoof(dir,URL,proj);
 

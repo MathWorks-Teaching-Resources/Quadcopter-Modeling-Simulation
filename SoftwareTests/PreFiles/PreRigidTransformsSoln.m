@@ -3,9 +3,9 @@
 KnownIssuesID = "";
 % ---- Pre-run commands -----
  
-open = @(str)MyOpen(str);
+openExample = @(str)MyOpen(str);
 
 function MyOpen(str)
 assert(exist(str,"file"))
-disp("Open " + str)
+disp("Open the example " + str)
 end

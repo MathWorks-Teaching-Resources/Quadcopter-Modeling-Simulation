@@ -1,9 +1,9 @@
 %  Pre-run script for SensorFusion.mlx
 % ---- Known Issues     -----
-KnownIssuesID = "";
+KnownIssuesID = "MATLAB:Editor:Document:NotAvailable";
 % ---- Pre-run commands -----
 DownloadExampleFromFileExchange = @(dir,URL,proj) DownloadSpoof(dir,URL,proj);
-open = @(str)MyOpen(str);
+openExample = @(str)MyOpen(str);
 
 function DownloadSpoof(dir)
 disp("Pretend downloading example to " + dir + " from " + URL)
@@ -12,5 +12,5 @@ end
 
 function MyOpen(str)
 assert(exist(str,"file"))
-disp("Open " + str)
+disp("Open the example " + str)
 end

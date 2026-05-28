@@ -1,11 +1,17 @@
 %  Pre-run script for MultidomainPhysicalModeling.mlx
 % ---- Known Issues     -----
-KnownIssuesID = "";
+KnownIssuesID = "MATLAB:Editor:Document:NotAvailable";
 % ---- Pre-run commands -----
  
 open = @(str)MyOpen(str);
+openExample = @(str)MyOpenExample(str);
 
 function MyOpen(str)
 assert(exist(str,"file"))
 disp("Open " + str)
+end
+
+function MyOpenExample(str)
+assert(exist(str,"file"))
+disp("Open the example " + str)
 end

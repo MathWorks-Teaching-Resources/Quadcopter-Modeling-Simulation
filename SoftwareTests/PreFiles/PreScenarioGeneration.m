@@ -1,11 +1,11 @@
 %  Pre-run script for ScenarioGeneration.mlx
 % ---- Known Issues     -----
-KnownIssuesID = "";
+KnownIssuesID = "MATLAB:Editor:Document:NotAvailable";
 % ---- Pre-run commands -----
  
-open = @(str)MyOpen(str);
+openExample = @(str)MyOpen(str);
 
 function MyOpen(str)
 assert(exist(str,"file"))
-disp("Open " + str)
+disp("Open the example " + str)
 end
