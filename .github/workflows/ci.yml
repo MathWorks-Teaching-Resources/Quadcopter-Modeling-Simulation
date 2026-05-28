@@ -88,6 +88,7 @@ jobs:
         Symbolic_Math_Toolbox
         Robotics_System_Toolbox
         UAV_Toolbox
+        Aerospace_Blockset
       LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libstdc++.so.6
     steps:
       # Checks-out your repository
