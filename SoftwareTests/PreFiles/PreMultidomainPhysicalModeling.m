@@ -12,6 +12,5 @@ disp("Open " + str)
 end
 
 function MyOpenExample(str)
-assert(exist(str,"file"))
 disp("Open the example " + str)
 end

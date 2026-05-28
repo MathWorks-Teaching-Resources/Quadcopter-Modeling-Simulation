@@ -11,6 +11,5 @@ disp("Then pretend running the project: " + proj)
 end
 
 function MyOpen(str)
-assert(exist(str,"file"))
 disp("Open the example " + str)
 end

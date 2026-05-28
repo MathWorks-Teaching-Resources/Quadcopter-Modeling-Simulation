@@ -3,7 +3,7 @@
 KnownIssuesID = "";
 % ---- Pre-run commands -----
  
-pen = @(str)MyOpen(str);
+open = @(str)MyOpen(str);
 
 function MyOpen(str)
 assert(exist(str,"file"))

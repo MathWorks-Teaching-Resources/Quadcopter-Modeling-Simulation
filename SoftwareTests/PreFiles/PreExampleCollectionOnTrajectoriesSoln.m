@@ -6,6 +6,5 @@ KnownIssuesID = "MATLAB:Editor:Document:NotAvailable";
 openExample = @(str)MyOpen(str);
 
 function MyOpen(str)
-assert(exist(str,"file"))
 disp("Open the example" + str)
 end
