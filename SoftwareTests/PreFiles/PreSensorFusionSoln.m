@@ -1,6 +1,6 @@
 %  Pre-run script for SensorFusionSoln.mlx
 % ---- Known Issues     -----
-KnownIssuesID = "MATLAB:Editor:Document:NotAvailable";
+KnownIssuesID = "";
 % ---- Pre-run commands -----
 DownloadExampleFromFileExchange = @(dir,URL,proj) DownloadSpoof(dir,URL,proj);
 openExample = @(str)MyOpen(str);

@@ -1,6 +1,6 @@
 %  Pre-run script for ExampleCollectionOnTrajectoriesSoln.mlx
 % ---- Known Issues     -----
-KnownIssuesID = "MATLAB:Editor:Document:NotAvailable";
+KnownIssuesID = "";
 % ---- Pre-run commands -----
  
 openExample = @(str)MyOpen(str);
