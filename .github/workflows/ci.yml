@@ -77,6 +77,11 @@ jobs:
       fail-fast: false
       matrix:
         Releases: [R2026a, R2026b]
+        include:
+          - Releases: R2026a
+            PointCloudProduct: Lidar_Toolbox
+          - Releases: R2026b
+            PointCloudProduct: Point_Cloud_Toolbox
     runs-on: ubuntu-latest
     env:
       MATLAB_PRODUCTS: >
@@ -89,6 +94,7 @@ jobs:
         Robotics_System_Toolbox
         UAV_Toolbox
         Aerospace_Blockset
+        ${{ matrix.PointCloudProduct }}
       LD_PRELOAD: /usr/lib/x86_64-linux-gnu/libstdc++.so.6
     steps:
       # Checks-out your repository
