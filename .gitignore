@@ -44,13 +44,16 @@ codegen/
 # Cache files
 *.slxc
 
-# Project settings
-Utilities/ProjectSettings.mat
-
 # Testing and CI related artifact
 public/
 .buildtool/
 ci_utilities/
+
+# AI Tooling
+.playwright-mcp/
+
+# Obsidian
+.obsidian/
 
 # Additional files downloaded by the module
 QuadcopterDrone/

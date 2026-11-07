@@ -3,6 +3,7 @@
 KnownIssuesID = "";
 % ---- Pre-run commands -----
 DownloadExampleFromFileExchange = @(dir,URL,proj) DownloadSpoof(dir,URL,proj);
+% <matlab:ShareFeedback Share your feedback>
 
 function DownloadSpoof(dir,URL,proj)
 disp("Pretend downloading example to " + dir + " from " + URL)

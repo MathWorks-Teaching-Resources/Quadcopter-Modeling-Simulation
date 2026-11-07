@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info File="Utilities/ProjectStartupApp.m" GroupUUID="default" Icon="" Name="ProjectStartupApp" Type="StartUp" Visible="0">
+    <Extension Name="StartUpPrev" Value="a46c3aa0-1acf-4e95-bb2f-59d3fed4fdab"/>
+</Info>

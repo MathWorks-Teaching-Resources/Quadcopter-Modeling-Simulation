@@ -5,6 +5,7 @@ KnownIssuesID = "";
  
 open = @(str)MyOpen(str);
 openExample = @(str)MyOpenExample(str);
+% <matlab:ShareFeedback Share your feedback>
 
 function MyOpen(str)
 assert(exist(str,"file"))
